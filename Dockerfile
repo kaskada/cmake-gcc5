@@ -13,7 +13,7 @@ RUN wget http://downloads.sourceforge.net/project/boost/boost/${BOOST_VERSION}/b
     tar xvf boost_${BOOST_PATH}.tar.gz && \
     cd boost_${BOOST_PATH} && \
     ./bootstrap.sh --prefix=/usr && \
-    ./b2 --with=all -j 4 install
+    ./b2 --with=all install
 
 RUN git clone https://github.com/jimporter/bencode.hpp.git && \
     cd bencode.hpp && \
